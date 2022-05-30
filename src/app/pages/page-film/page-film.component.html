@@ -1,0 +1,19 @@
+<p>page-film works!</p>
+<h1>Liste de mes films</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre du film</th>
+
+            <th>Release date</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let film of listFilm">
+            <td>{{ film.title }}</td>
+            <td>{{ film.release_date }}</td>
+        </tr>
+    </tbody>
+</table>
